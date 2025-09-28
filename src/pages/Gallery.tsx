@@ -1,9 +1,9 @@
-import { Container, Typography, Card, CardMedia, CardContent, Grid } from '@mui/material';
+import { Container, Typography, Grid, Card, CardMedia, CardContent } from '@mui/material';
 
 const demoWorks = [
-  { title: 'Bar Mitzvah Song', image: '/assets/demo1.jpg', description: 'A special recording for a Bar Mitzvah.' },
-  { title: 'Business Jingle', image: '/assets/demo2.jpg', description: 'Catchy jingle for a business.' },
-  { title: 'Narration', image: '/assets/demo3.jpg', description: 'Professional narration for a podcast.' },
+  { title: 'Bar Mitzvah Song', image: '/assets/mike.jpg', description: 'A special recording for a Bar Mitzvah.', audio: '/assets/bar-mitzvah.mp3' },
+  { title: 'Business Jingle', image: '/assets/music.jpg', description: 'Catchy jingle for a business.', video: '/assets/jingle.mp4' },
+  { title: 'Narration', image: '/assets/mixer.jpg', description: 'Professional narration for a podcast.' },
 ];
 
 export default function Gallery() {
@@ -19,6 +19,12 @@ export default function Gallery() {
               <CardContent>
                 <Typography variant="h6">{work.title}</Typography>
                 <Typography variant="body2">{work.description}</Typography>
+                {work.audio && (
+                  <audio controls src={work.audio} style={{ width: '100%', marginTop: '8px' }} />
+                )}
+                {work.video && (
+                  <video controls src={work.video} style={{ width: '100%', marginTop: '8px' }} />
+                )}
               </CardContent>
             </Card>
         ))}
