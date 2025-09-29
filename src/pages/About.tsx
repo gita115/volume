@@ -4,11 +4,11 @@ export default function About() {
   return (
     <Container>
       <Typography variant="h4" gutterBottom color="secondary">
-        About Volume Studio
+        על אולפן ווליום
       </Typography>
       <Typography variant="body1">
-        Volume Studio is a top-tier recording studio specializing in songs, jingles, narration, and audio productions.
-        With years of experience and professional equipment, we guarantee the best results for every project.
+        אולפן ווליום הוא אולפן הקלטות מקצועי המתמחה בשירים, ג'ינגלים, קריינות והפקות קול.
+        עם ניסיון רב וציוד מתקדם, אנו מבטיחים תוצאה מושלמת לכל פרויקט מוזיקלי.
       </Typography>
     </Container>
   );
