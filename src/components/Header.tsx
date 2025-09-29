@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography, IconButton, Box, Button, Drawer, List, Lis
 import MenuIcon from '@mui/icons-material/Menu';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const navLinks = [
   { label: 'בית', to: '/' },
@@ -11,6 +11,8 @@ const navLinks = [
   { label: 'מחירים', to: '/pricing' },
   { label: 'יצירת קשר', to: '/contact' },
   { label: 'עלינו', to: '/about' },
+  { label: 'המלצות', to: '/testimonials' },
+  { label: 'עדכונים', to: '/blog' },
 ];
 
 export default function Header() {
