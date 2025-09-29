@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ThemeProvider, CssBaseline, IconButton, Box } from '@mui/material';
 import { lightTheme, darkTheme } from './theme';
 import Header from './components/Header';
@@ -12,6 +12,8 @@ import About from './pages/About';
 import { Routes, Route } from 'react-router-dom';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import Testimonials from './pages/Testimonials';
+import Blog from './pages/Blog';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -37,6 +39,8 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/testimonials" element={<Testimonials/>} />
+        <Route path="/blog" element={<Blog/>} />
       </Routes>
       <Footer />
     </ThemeProvider>

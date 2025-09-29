@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container, Typography, Box, Card, CardMedia, CardContent, Dialog, DialogContent, IconButton, Fade } from '@mui/material';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import CloseIcon from '@mui/icons-material/Close';
