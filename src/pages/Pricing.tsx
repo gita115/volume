@@ -1,23 +1,23 @@
 import { Container, Typography, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 
 const packages = [
-  { name: "Bar Mitzvah Song", price: "₪1200" },
-  { name: "Business Jingle", price: "₪1500" },
-  { name: "Narration", price: "₪800" },
-  { name: "Mashup Package", price: "₪2000" },
+  { name: "שיר בר מצווה", price: "₪1200" },
+  { name: "ג'ינגל עסקי", price: "₪1500" },
+  { name: "קריינות", price: "₪800" },
+  { name: "מחרוזת", price: "₪2000" },
 ];
 
 export default function Pricing() {
   return (
     <Container>
       <Typography variant="h4" gutterBottom color="secondary">
-        Pricing Packages
+        חבילות מחירים
       </Typography>
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Package</TableCell>
-            <TableCell>Price</TableCell>
+            <TableCell>חבילה</TableCell>
+            <TableCell>מחיר</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
