@@ -22,7 +22,6 @@ function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
       <Header />
-      {/* כפתור מצב לילה/יום */}
       <Box sx={{ position: 'fixed', bottom: 20, left: 20, zIndex: 2000 }}>
         <IconButton
           color="secondary"

@@ -4,17 +4,20 @@ export const lightTheme = createTheme({
   direction: 'rtl',
   palette: {
     mode: 'light',
-    primary: { main: '#ed6ea0' }, // ורוד
-    secondary: { main: '#bfc2c7' }, // כסוף
-    background: { default: '#f6f6f6', paper: '#fff0f6' },
-    text: { primary: '#3c3c3c', secondary: '#857c8d' },
+    primary: { main: '#f45ea6' }, // ורוד בוהק
+    secondary: { main: '#c0cad1' }, // כסוף/מטאלי
+    background: { default: '#faf7fb', paper: '#fff' },
+    text: { primary: '#1b1220' },
   },
   typography: {
-    fontFamily: 'Heebo, Alef, Arial, sans-serif',
-    h2: {
-      fontWeight: 700,
-      letterSpacing: '2px',
-      textShadow: '2px 2px 6px #bfc2c7',
+    fontFamily: 'Heebo, Alef, Inter, Arial, sans-serif',
+  },
+  components: {
+    MuiButton: {
+      defaultProps: { disableElevation: true },
+      styleOverrides: {
+        root: { borderRadius: 12, padding: '10px 18px' },
+      },
     },
   },
 });
